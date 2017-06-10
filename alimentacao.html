@@ -43,7 +43,7 @@
                     <li aria-hidden="true" class="icon-ground glyphicon" title="Lista de Pressão Arterial"><a href="pressartl.html"><img src="images/glyphicons/png/glyphicons-672-heartbeat.png" alt="Lista de Pressão Arterial"></a></li>
                 </ul>
             </div>
-         </div>
+        </div>
     </header>
 </div>
 <section class="conteudo">
@@ -51,92 +51,93 @@
     </div>
     <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6 table-responsive">
         <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Calorias</th>
-                        <th>Data</th>
-                        <th>Hora</th>
-                        <th>Descrição</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody class="text-center">
-                    <tr>
-                        <td>Café da manhã</td>
-                        <td>49</td>
-                        <td>04/06/2017</td>
-                        <td>11:00</td>
-                        <td>Café e Bolacha</td>
-                        <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-                        <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
-                    </tr>
-                    <tr>
-                        <td>Almoço</td>
-                        <td>51</td>
-                        <td>25/12/2016</td>
-                        <td>11:00</td>
-                        <td>Arroz, feijão e carne</td>
-                        <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-                        <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Adicionar novo
-            </button>
-        </div>
-        <div class="col-md-3 col-lg-3 hidden-sm hidden-xs">
-        </div>
-    </section>
-    <footer>
-        <div class="col-md-12 col-xs-12 footer">
-            <p>&copy William R. Sousa</p>
-        </div>
-    </footer>
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/bootstrap.js"></script>
+            <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Calorias</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Descrição</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            <tr>
+                <td>Café da manhã</td>
+                <td>49</td>
+                <td>04/06/2017</td>
+                <td>11:00</td>
+                <td>Café e Bolacha</td>
+                <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
+                <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
+            </tr>
+            <tr>
+                <td>Almoço</td>
+                <td>51</td>
+                <td>25/12/2016</td>
+                <td>11:00</td>
+                <td>Arroz, feijão e carne</td>
+                <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
+                <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
+            </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Adicionar novo
+        </button>
+    </div>
+    <div class="col-md-3 col-lg-3 hidden-sm hidden-xs">
+    </div>
+</section>
+<footer>
+    <div class="col-md-12 col-xs-12 footer">
+        <p>&copy William R. Sousa</p>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
     
-    <!-- Modal -->
-    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content text-center">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="gridSystemModalLabel">Informe os dados sobre Alimentação </h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-inline">
-                      <div class="form-group">
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Informe os dados sobre Alimentação </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
                         <label for="tipo">Tipo</label>
                         <div class="col-sm-12">
                             <select class="form-control" name="tipo">
-                              <option>Café da manhã</option>
-                              <option>Almoço</option>
-                              <option>Lanche leve</option>
-                              <option>Jantar</option>
-                              <option>Fruta</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-sm-6">
-                        <label for="calorias">Calorias</label>
-                        <input type="number" name="calorias" id="exampleInputEmail3" class="form-control col-lg-2" placeholder="Calorias">
+                                <option>Café da manhã</option>
+                                <option>Almoço</option>
+                                <option>Lanche leve</option>
+                                <option>Jantar</option>
+                                <option>Fruta</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-sm-5">
-                        <label for="data">Data</label>
-                        <input type="datetime-local" name="data" class="form-control col-lg-2" id="data" placeholder="01/09/1990">
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                            <label for="calorias">Calorias</label>
+                            <input type="number" name="calorias" id="exampleInputEmail3" class="form-control col-lg-2" placeholder="Calorias">
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="data">Data</label>
+                            <input type="datetime-local" name="data" class="form-control col-lg-2" id="data" placeholder="01/09/1990">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label>Descrição</label>
-                    <div class="col-sm-12">
-                        <textarea class="form-control" rows="3" cols="70" placeholder="Descrição"></textarea>
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" rows="3" cols="70" placeholder="Descrição"></textarea>
+                        </div>
                     </div>
-                </div>
-            </form></div>
+                </form>
+            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-primary button">Adicionar</button>
