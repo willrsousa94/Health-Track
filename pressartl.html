@@ -13,123 +13,126 @@
     <title>Health Track - Pressão Arterial</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="row">
-            <div class="hidden-sm hidden-xs col-md-1">
+<div class="container-fluid">
+    <header class="row">
+        <div class="hidden-sm hidden-xs col-md-1">
+        </div>
+        <div class="col-sm-2 hidden-xs">
+            <a href="index.html"><img src="images/healthtrack_logo.png" id="logo" alt="Logo do Health Track" class="img-responsive img-size"></a>
+        </div>
+        <div class="col-sm-7 col-xs-12 col-md-6">
+            <h1 class=" text-center"> Lista de Pressão Arterial</h1>
+        </div>
+        <div class="col-sm-1 col-xs-8">
+            <a class="btn btn-primary centr" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                Menu <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </a>
+        </div>
+        <aside class="col-sm-2 centr col-xs-4">
+            <p>Olá, <span>William!</span></p>
+            <a href="perfil.html">Ver Perfil</a> |
+            <a href="index.html">Sair</a>
+        </aside>
+        <div class="collapse col-md-12" id="collapseExample">
+            <div class="">
+                <ul class="list-inline text-center nav nav-tabs nav-justified">
+                    <li aria-hidden="true" class="glyphicon" title="Dashboard"><a href="dashboard.html" ><img src="images/glyphicons/png/glyphicons-21-home.png" alt="Dashboard"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Peso"><a href="peso.html"><img src="images/glyphicons/png/glyphicons-554-scale.png" alt="Lista de Peso"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Alimentação"><a href="alimentacao.html"><img src="images/glyphicons/png/glyphicons-277-cutlery.png" alt="Lista de Alimentação"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Atividade Física"><a href="atfisica.html"><img src="images/glyphicons/png/glyphicons-635-teenager.png" alt="Lista de Atividades Físicas"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Pressão Arterial"><a href="pressartl.html"><img src="images/glyphicons/png/glyphicons-672-heartbeat.png" alt="Lista de Pressão Arterial"></a></li>
+                </ul>
             </div>
-            <div class="col-sm-2 hidden-xs">
-                <a href="index.html"><img src="images/healthtrack_logo.png" id="logo" alt="Logo do Health Track" class="img-responsive img-size"></a>
-            </div>
-            <div class="col-sm-7 col-xs-12 col-md-6">
-                <h1 class=" text-center"> Lista de Pressão Arterial</h1>
-            </div>
-            <div class="col-sm-1 col-xs-8">
-                <a class="btn btn-primary centr" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
-                    Menu <span class="glyphicon glyphicon-menu-hamburger"></span>
-                </a>
-            </div>
-            <aside class="col-sm-2 centr col-xs-4">
-                <p>Olá, <span>William!</span></p>
-                <a href="perfil.html">Ver Perfil</a> |
-                <a href="index.html">Sair</a>
-            </aside>
-            <div class="collapse col-md-12" id="collapseExample">
-                <div class="">
-                    <ul class="list-inline text-center nav nav-tabs nav-justified">
-                        <li aria-hidden="true" class="glyphicon" title="Dashboard"><a href="dashboard.html" ><img src="images/glyphicons/png/glyphicons-21-home.png" alt="Dashboard"></a></li>
-                        <li aria-hidden="true" class="glyphicon" title="Lista de Peso"><a href="peso.html"><img src="images/glyphicons/png/glyphicons-554-scale.png" alt="Lista de Peso"></a></li>
-                        <li aria-hidden="true" class="glyphicon" title="Lista de Alimentação"><a href="alimentacao.html"><img src="images/glyphicons/png/glyphicons-277-cutlery.png" alt="Lista de Alimentação"></a></li>
-                        <li aria-hidden="true" class="glyphicon" title="Lista de Atividade Física"><a href="atfisica.html"><img src="images/glyphicons/png/glyphicons-635-teenager.png" alt="Lista de Atividades Físicas"></a></li>
-                        <li aria-hidden="true" class="glyphicon" title="Lista de Pressão Arterial"><a href="pressartl.html"><img src="images/glyphicons/png/glyphicons-672-heartbeat.png" alt="Lista de Pressão Arterial"></a></li>
-                    </ul>
-                </div>
-        </header>
+        </div>
+    </header>
+</div>
+<section class="conteudo">
+    <div class="col-md-2 col-lg-3 hidden-sm hidden-xs">
     </div>
-    <section class="conteudo">
-        <div class="col-md-2 col-lg-3 hidden-sm hidden-xs">
-        </div>
-        <div class="col-md-8 col-xs-12 col-sm-12 col-lg-6 table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>P. Sistólica(mmHg)</th>
-                        <th>P. Diastólica(mmHg)</th>
-                        <th>Situação</th>
-                        <th>Data</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td>120</td>
-                        <td>90</td>
-                        <td>NORMAL</td>
-                        <td>04/06/2017</td>
-                        <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-                        <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
-                    </tr>
-                    <tr>
-                        <td>140</td>
-                        <td>85</td>
-                        <td>NORMAL</td>
-                        <td>25/12/2017</td>
-                        <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-                        <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
-                    </tr>
-                </thead>
-            </table>
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Adicionar novo
-            </button>
-        </div>
-        <div class="col-md-2 col-lg-3 hidden-sm hidden-xs">
-        </div>
-    </section>
-    <footer>
-        <div class="col-md-12 col-xs-12 footer">
-            <p>&copy William R. Sousa</p>
-        </div>
-    </footer>
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <div class="col-md-8 col-xs-12 col-sm-12 col-lg-6 table-responsive">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>P. Sistólica(mmHg)</th>
+                <th>P. Diastólica(mmHg)</th>
+                <th>Situação</th>
+                <th>Data</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>90</td>
+                <td>NORMAL</td>
+                <td>04/06/2017</td>
+                <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
+                <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
+            </tr>
+            <tr>
+                <td>140</td>
+                <td>85</td>
+                <td>NORMAL</td>
+                <td>25/12/2017</td>
+                <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
+                <td><a href="#" class="btn btn-default glyphicon glyphicon-remove"></a></td>
+            </tr>
+            </thead>
+        </table>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Adicionar novo
+        </button>
+    </div>
+    <div class="col-md-2 col-lg-3 hidden-sm hidden-xs">
+    </div>
+</section>
+<footer>
+    <div class="col-md-12 col-xs-12 footer">
+        <p>&copy William R. Sousa</p>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
     
-    <!-- Modal -->
-    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content text-center">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="gridSystemModalLabel">Informe os dados sobre Pressão Arterial </h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-inline">
-                      <div class="form-group">
-                      </div>
-                      <div class="form-group">
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Informe os dados sobre Pressão Arterial </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                    </div>
+                    <div class="form-group">
                         <div class="col-sm-6">
-                          <label>Pressão Sistólica</label>
-                          <div class="input-group">
-                              <input type="text" class="form-control" id="exampleInputAmount" placeholder="120">
-                              <div class="input-group-addon">mmHg</div>
-                          </div></div>
-                          <div class="col-sm-6">
+                            <label>Pressão Sistólica</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="120">
+                                <div class="input-group-addon">mmHg</div>
+                            </div></div>
+                        <div class="col-sm-6">
                             <label>Pressão Diastólica</label>
                             <div class="input-group">
-                              <input type="text" class="form-control" id="exampleInputAmount" placeholder="80">
-                              <div class="input-group-addon">mmHg</div>
-                          </div></div>
-                          <div class="col-sm-12">
+                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="80">
+                                <div class="input-group-addon">mmHg</div>
+                            </div></div>
+                        <div class="col-sm-12">
                             <label for="data">Data</label>
                             <div class="input-group">
                                 <input type="datetime-local" name="calorias" class="form-control col-lg-12" id="data" placeholder="01/09/1990">
-                            </div></div>
+                            </div>
                         </div>
-                    </form></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary button">Adicionar</button>
                     </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-    </body>
-    </html>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary button">Adicionar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</body>
+</html>
