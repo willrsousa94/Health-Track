@@ -41,7 +41,8 @@
                     <li aria-hidden="true" class="icon-ground glyphicon" title="Lista de Atividade Física"><a href="atfisica.html"><img src="images/glyphicons/png/glyphicons-635-teenager.png" alt="Lista de Atividades Físicas"></a></li>
                     <li aria-hidden="true" class="icon-ground glyphicon" title="Dashboard"><a href="pressartl.html"><img src="images/glyphicons/png/glyphicons-672-heartbeat.png" alt="Lista de Pressão Arterial"></a></li>
                 </ul>
-            </div></div>
+            </div>
+        </div>
     </header>
 </div>
 <section class="conteudo">
@@ -78,13 +79,12 @@
                         <label for="exampleInputEmail2">E-mail</label>
                         <input type="email" class="form-control" id="exampleInputEmail2" value="rm78369@fiap.com.br" readonly>
                     </div>
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Alterar Perfil
-</button>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        Alterar Perfil
+                    </button>
                 </form>
             </div>
         </fieldset>
-
     </div>
     <div class="hidden-xs hidden-sm col-md-3">
     </div>
@@ -96,7 +96,7 @@
 </footer>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.js"></script>
-    
+
 <!-- Modal -->
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
     <div class="modal-dialog" role="document">
@@ -106,74 +106,44 @@
                 <h4 class="modal-title" id="gridSystemModalLabel">Alterar Perfil </h4>
             </div>
             <div class="modal-body">
- <div class="panel-body">
-                <form class="form-group" action="perfil.html" method="post">
-                    <div class="form-group">
-                        <label for="exampleInputName2">Nome Completo</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="William Rodrigues de Sousa">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Data de nascimento</label>
-                        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="27/12/1994" value="27/12/1994">
-                    </div>
-                    <div class="form-group">
+                <div class="panel-body">
+                    <form class="form-group" action="perfil.html" method="post">
                         <div class="form-group">
-                            <label> Gênero </label>
+                            <label for="exampleInputName2">Nome Completo</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="William Rodrigues de Sousa">
                         </div>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Masc" checked> Masculino
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Fem"> Feminino
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Altura (m)</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="1,64m">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail2">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="rm78369@fiap.com.br">
-                    </div>
-                </form></div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                            <button type="submit" class="btn btn-primary">Alterar</button>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Data de nascimento</label>
+                            <input type="date" class="form-control" id="exampleInputPassword1" placeholder="27/12/1994" value="27/12/1994">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label> Gênero </label>
+                            </div>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Masc" checked> Masculino
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Fem"> Feminino
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Altura (m)</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="1,64m">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="rm78369@fiap.com.br">
+                        </div>
+                    </form>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Alterar</button>
                 </div>
             </div>
         </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog --><!-- /.modal -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>
 </html>
-    
-    <!--            <div class="panel-body">
-                <form class="form-group input-sm" action="dashboard.html" method="post">
-                    <div class="form-group">
-                        <label for="exampleInputName2">Nome Completo</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="William Rodrigues de Sousa">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Data de nascimento</label>
-                        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="27/12/1994">
-                    </div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label> Gênero </label>
-                        </div>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Masc" checked> Masculino
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Fem"> Feminino
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Altura (m)</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="1,64m">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail2">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="rm78369@fiap.com.br">
-                    </div>
-                </form></div> -->
