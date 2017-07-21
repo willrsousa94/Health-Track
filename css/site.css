@@ -2,7 +2,7 @@ body {
     /* background-image: url("../images/health.jpg");
     background-repeat: no-repeat;
     background-position: 100%; */
-    background-image: linear-gradient(240deg,
+    /* background-image: linear-gradient(240deg,
     	transparent,
     	rgba(200,200,200,.5),
     	transparent,
@@ -10,12 +10,20 @@ body {
     	transparent,
     	rgba(150,150,150,.5));
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Open Sans', Arial, sans-serif;
+    background-attachment: fixed; */
+	background-color: rgba(200,200,200,.5);
+    font-family: 'Open Sans', sans-serif;
+	opacity: 1;
+}
+
+.conteudo {
+	font-family: 'Open Sans', Arial, sans-serif;
+	opacity: 1;
+	transition: background 1.2s linear;
 }
 header {
 	/* background-color: rgba(0,120,255,.5); */
-	background-image: linear-gradient(to bottom, rgba(0,120,255,.5), rgba(200,200,200,.5));
+	background-image: linear-gradient(to bottom, rgba(0,120,255,.5), rgba(220,220,220,.5));
 }
 
 .login button, a.button {
@@ -46,9 +54,8 @@ header h1 {
 /* Código CSS para a tela de LOGIN*/
 
 /* Código CSS para as telas conteudo e aside */
-
 .conteudo {
-	height: 100vh;
+	height: 120vh;
 }
 
 
@@ -58,6 +65,8 @@ header h1 {
 
 /* Código CSS para o FOOTER */
 .footer {
+	bottom: 0;
+	width: 100%;
 	color: #fff;
 	background-color: #000;
 }

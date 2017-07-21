@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/site.css">
     <title>Health Track - Início</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/cadastro.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -24,8 +27,8 @@
             <h1> Bem-vindo </h1>
         </div>
         <aside class="col-md-4 centr hidden-xs hidden-sm">
-            <a href="cadastro.html" class="btn btn-default loaded.bs.modal">Cadastrar</a>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Acessar</button>
+            <a href="cadastro.html" class="btn btn-default loaded.bs.modal" id="botaoCadastro">Cadastrar</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="botaoAcessar">Acessar</button>
         </aside>
     </header>
 </div>
@@ -60,11 +63,15 @@
         </form>
         <div class="col-md-12 col-lg-12 hidden-sm hidden-xs">
             <div class="col-md-3"></div>
-            <div class="col-md-6 panel panel-default conteudo">
-                <blockquote>
-                    <p class="panel-title">O Health Track é o sistema perfeito para você acompanhar sua saúde.</p>
-                    <p class="panel-body">Você poderá informar seu peso, altura, sua alimentação e atividade física e a pressão arterial para, assim, poder controlar sua saúde de uma maneira fácil e eficáz. Faça agora seu <a href="#">cadastro</a> e participe dessa iniciativa</p>
-                </blockquote>
+            <div class="col-md-6">
+                <main class=" panel panel-primary jumbotron">
+                    <div class="panel-heading">
+                    <p>O Health Track é o sistema perfeito para você acompanhar sua saúde.</p>
+                    </div>
+                    <div class="panel-body">
+                    <p>Você poderá informar seu peso, altura, sua alimentação e atividade física e a pressão arterial para, assim, poder controlar sua saúde de uma maneira fácil e eficáz. Faça agora seu <a href="#">cadastro</a> e participe dessa iniciativa</p>
+                    </div>
+                </main>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -75,8 +82,6 @@
         <p>&copy William R. Sousa</p>
     </div>
 </footer>
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/bootstrap.js"></script>
 
 <!-- Modal -->
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">

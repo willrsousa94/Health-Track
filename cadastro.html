@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>Health Track - Cadastro</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js">
+    </script>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid relative">
     <header class="row">
         <div class="col-md-2 hidden-xs hidden-sm">
             <a href="index.html"><img src="images/healthtrack_logo.png" id="logo" alt="Logo do Health Track" class="img-responsive img-size"></a>
@@ -30,103 +36,60 @@
 <section class="conteudo">
     <div class="hidden-xs hidden-sm col-md-3">
     </div>
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ">
-        <fieldset><legend>Cadastro</legend>
+    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="panel panel-primary jumbotron">
+            <div class="panel-heading text-center h4">Cadastro</div>
             <div class="panel-body">
-                <form class="form-group input-sm" action="dashboard.html" method="post">
+                <form class="form-group required" action="dashboard.html" method="post">
                     <div class="form-group">
-                        <label for="exampleInputName2">Nome Completo</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Nome Completo" required autofocus>
+                        <label for="exampleInputName2" class="col-sm-12 label label-default">Nome Completo</label>
+                        <input type="text" class="form-control required col-sm-12" id="exampleInputName2" name="nome" placeholder="Nome Completo" autofocus>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Data de nascimento</label>
-                        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Ex.: 09/12/1990" required>
+                        <label for="data" class="col-sm-12 label label-default">Data de nascimento</label>
+                        <input type="date" class="form-control required col-sm-12" id="data" name="data" placeholder="Ex.: 09/12/1990">
                     </div>
                     <div class="form-group">
-                        <div class="form-group">
-                            <label> Gênero </label>
-                        </div>
-                        <label class="radio-inline">
+                        <label class="col-sm-12 label label-default"> Gênero </label>
+                        <label class="radio-inline col-sm-6">
                             <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Masc" checked> Masculino
                         </label>
-                        <label class="radio-inline">
+                        <label class="radio-inline col-sm-5 ">
                             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Fem"> Feminino
                         </label>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Altura (m)</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="1,65m" required>
+                        <label for="altura" class="col-sm-12 label label-default">Altura (m)</label>
+                        <input type="text" class=" required  form-control" id="altura" name="altura" placeholder="1,65m">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail2">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="meu@email.com.br" required>
+                        <label for="exampleInputEmail2" class="col-sm-12 label label-default">E-mail</label>
+                        <input type="email" class="form-control required col-sm-12" id="exampleInputEmail2" name="email" placeholder="meu@email.com.br">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Informe a senha</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********" pattern=".{6,}" title="Digite uma senha com no mínimo 6 dígitos" required>
+                        <label for="exampleInputPassword1" class="col-sm-12 label label-primary">Informe a senha</label>
+                        <input type="password" class="form-control required col-sm-12" id="exampleInputPassword1" name="password" placeholder="*********" title="Digite uma senha com no mínimo 6 dígitos">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Confirme a senha</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********" required>
+                        <label for="confirm-password" class="col-sm-12 label label-primary">Confirme a senha</label>
+                        <input type="password" class="form-control required col-sm-12" id="confirm-password" name="confirmpassword" placeholder="*********">
                     </div>
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <div>
+                        <div class="col-sm-8"></div>
+                        <div class="panel-footer">
+                        <button class="btn btn-primary">Cadastrar</button>
+                        <button class="btn btn-danger">Cancelar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
-        </fieldset>
-    </div>
     <div class="hidden-xs hidden-sm col-md-3">
     </div>
 </section>
-<footer>
+<footer class="">
     <div class="col-lg-12 footer">
         <p>&copy William R. Sousa</p>
     </div>
 </footer>
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/bootstrap.js"></script>
-
-<!-- Modal -->
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="gridSystemModalLabel">Health Track </h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <form class="form-horizontal col-lg-12 login">
-                        <div class="form-group input">
-                            <label for="inputEmail3" class="col-sm-2 control-label"><span class="glyphicon glyphicon-user"></span></label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="Digite seu usuário">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-md-2 control-label"><span class="glyphicon glyphicon-lock"></span></label>
-                            <div class="col-md-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
-                            </div>
-                        </div>
-                        <a href="#" class="col-sm-offset-2 col-sm-10" >Esqueci minha senha</a>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-9">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> Lembrar usuário
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                            <a href="dashboard.html" class="btn btn-primary button">Entrar</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 </body>
 </html>
